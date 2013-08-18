@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>NEON WEBB</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+
+    <!--[if IE 6]>
+            <script src="~/Scripts/DD_belatedPNG_0.0.8a-min.js"></script>
+            <script>DD_belatedPNG.fix('.button');</script>
+        <![endif]-->
+</head>
+<body>
+    <div id="wrapper" class="container_12 clearfix">
+        <div style="margin-bottom: 0px;padding: 0px;">
+        <!-- Text Logo -->
+        <h1 id="logo" class="grid_4"><img id="testlogga" src="~/Images/Logos/logoSmall2.png" /></h1>
+        
+        <!-- Navigation Menu -->
+            <ul id="navigation" class="grid_8">
+                <li><a href="contact.html"><span class="meta">Kontakta oss</span><br />
+                        Kontakt</a></li>
+                <li><a href="portfolio.html"><span class="meta">Vad vi kan åstadkomma</span><br />
+                        Erbjudande</a></li>
+                <li><a href="@Url.Action("About", "About")"><span class="meta">Vilka är vi?</span><br />
+                        Om oss</a></li>
+                <li><a href="@Url.Action("Index", "Home")" class="current"><span class="meta">Startsida</span><br />
+                        Hem</a></li>
+            </ul>
+        </div>
+        <div style="margin-top: 0px; padding-top: 0px" class="hr grid_12">&nbsp;</div>
+        <div  style="margin-top: 0px; padding-top: 0px" class="clear"></div>
+        <!-- Featured Image Slider -->
+
+        @RenderSection("featured", required: false)
+        @RenderBody()
+
+        <div class="hr grid_12 clearfix">&nbsp;</div>
+        <!-- Footer -->
+        <p class="grid_12 footer clearfix"><span class="float">NEON WEBB STOCKHOLM | <b>&copy; Copyright 2013</b></span> 
+            <a class="float right" href="#">upp</a> </p>
+    </div>
+    <!--end wrapper-->
+    <div align="center">This template  downloaded form <a href='http://all-free-download.com/free-website-templates/'>free website templates</a></div>
+
+    @RenderSection("scripts", required: false)
+    
+</body>
+</html>

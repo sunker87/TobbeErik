@@ -1,0 +1,70 @@
+﻿
+@{
+    ViewBag.Title = "NEON WEBB | HEM";
+}
+
+<div id="featured" class="clearfix grid_12">
+    <ul>
+        <li><a href="~/images/Front/WinMac-600x300.jpg"><span>Read about this project</span>
+            <img src="~/images/Front/WinMac-600x300.jpg" alt="" />
+        </a></li>
+        <li><a href="~/images/Front/happy-600x300.jpg"><span>Read about this project</span>
+            <img src="~/images/Front/happy-600x300.jpg" alt="" />
+        </a></li>
+        <li><a href="~/images/Front/Link-600x300-590x295.png"><span>Read about this project</span>
+            <img src="~/images/Front/Link-600x300-590x295.png" alt="" />
+        </a></li>
+        <li><a href="#"><span>Read about this project</span>
+            <img src="~/images/Front/handshake-600x300.jpg" alt="" />
+        </a></li>
+    </ul>
+</div>
+
+<div class="hr grid_12 clearfix">&nbsp;</div>
+<!-- Caption Line -->
+<h2 class="grid_12 caption clearfix">
+    <span>NEON WEBB</span> är en prestigelös webbyrå i Stockholm som har specialiserat sig på att bygga enkla och effektiva hemsidor till företag.
+</h2>
+<div class="hr grid_12 clearfix quicknavhr">&nbsp;</div>
+<div id="quicknav" class="grid_12">
+    <a class="quicknavgrid_3 quicknav alpha" href="#">
+        <h4 class="title ">Portfolio</h4>
+        <p>Se våra tidigare projekt</p>
+        <p style="text-align: center;">
+            <img alt="" src="~/images/Art_Artdesigner.lv.png" />
+        </p>
+    </a><a class="quicknavgrid_3 quicknav" href="#">
+        <h4 class="title ">Lilalah</h4>
+        <p>Cras vestibulum lorem et dui mollis sed posuere leo semper. </p>
+        <p style="text-align: center;">
+            <img alt="" src="~/images/info.png" />
+        </p>
+    </a><a class="quicknavgrid_3 quicknav" href="#">
+        <h4 class="title ">Publiceringsverktyg</h4>
+        <p>Vilka instrument tillhandahåller vi dig som kund?</p>
+        <p style="text-align: center;">
+            <img alt="" src="~/images/Blog_Artdesigner.lv.png" />
+        </p>
+    </a><a class="quicknavgrid_3 quicknav" href="#">
+        <h4 class="title ">Sociala medier</h4>
+        <p>Cras vestibulum lorem et dui mollis sed posuere leo semper. </p>
+        <p style="text-align: center;">
+            <img alt="" src="~/images/hungry_bird.png" />
+        </p>
+    </a>
+</div>
+@section scripts
+{
+    <script src="~/Scripts/jquery.roundabout-1.0.min.js">
+    </script>
+    <script src="~/Scripts/jquery.easing.1.3.js"></script>
+}
+
+<script type="text/javascript">
+    $(document).ready(function () { //Start up our Featured Project Carosuel
+        $('#featured ul').roundabout({
+            easing: 'easeOutInCirc',
+            duration: 600
+        });
+    });
+</script>
