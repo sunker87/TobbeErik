@@ -9,13 +9,10 @@
             <img src="~/images/Front/WinMac-600x300.jpg" alt="" />
         </a></li>
         <li><a href="~/images/Front/happy-600x300.jpg"><span>Read about this project</span>
-            <img src="~/images/Front/happy-600x300.jpg" alt="" />
+            <img src="~/images/Front/socialmedia.png" alt="" />
         </a></li>
         <li><a href="~/images/Front/Link-600x300-590x295.png"><span>Read about this project</span>
-            <img src="~/images/Front/Link-600x300-590x295.png" alt="" />
-        </a></li>
-        <li><a href="#"><span>Read about this project</span>
-            <img src="~/images/Front/handshake-600x300.jpg" alt="" />
+            <img src="~/images/Front/crossbrowser.png" alt="" />
         </a></li>
     </ul>
 </div>
@@ -28,43 +25,46 @@
 <div class="hr grid_12 clearfix quicknavhr">&nbsp;</div>
 <div id="quicknav" class="grid_12">
     <a class="quicknavgrid_3 quicknav alpha" href="#">
-        <h4 class="title ">Portfolio</h4>
-        <p>Se våra tidigare projekt</p>
+        <h4 class="title ">Enkelt</h4>
+        <p>Se våra tidigare projekt lorem et dui mollis sed posuere leo semper.</p>
         <p style="text-align: center;">
-            <img alt="" src="~/images/Art_Artdesigner.lv.png" />
+            <img alt="" src="~/images/Icons/smartphone.png" />
         </p>
     </a><a class="quicknavgrid_3 quicknav" href="#">
-        <h4 class="title ">Åååh</h4>
+        <h4 class="title ">Prisvärt</h4>
         <p>Cras vestibulum lorem et dui mollis sed posuere leo semper. </p>
         <p style="text-align: center;">
-            <img alt="" src="~/images/info.png" />
+            <img alt="" src="~/images/Icons/money_icon2.png" />
         </p>
     </a><a class="quicknavgrid_3 quicknav" href="#">
-        <h4 class="title ">Publiceringsverktyg</h4>
+        <h4 class="title ">Användarvänligt</h4>
         <p>Vilka instrument tillhandahåller vi dig som kund?</p>
         <p style="text-align: center;">
-            <img alt="" src="~/images/Blog_Artdesigner.lv.png" />
+            <img alt="" src="~/Images/Icons/usability.png" />
         </p>
     </a><a class="quicknavgrid_3 quicknav" href="#">
-        <h4 class="title ">Sociala medier</h4>
+        <h4 class="title ">Socialt</h4>
         <p>Cras vestibulum lorem et dui mollis sed posuere leo semper. </p>
         <p style="text-align: center;">
-            <img alt="" src="~/images/hungry_bird.png" />
+            <img alt="" src="~/images/Icons/communicate.png" />
         </p>
     </a>
 </div>
 @section scripts
 {
-    <script src="~/Scripts/jquery.roundabout-1.0.min.js">
-    </script>
-    <script src="~/Scripts/jquery.easing.1.3.js"></script>
+    <script src="~/Scripts/jquery.roundabout.min.js"></script>
+    <script src="~/Scripts/jquery.roundabout-shapes-1.1.js"></script>
+    @*<script src="~/Scripts/jquery.event.drag.live-2.2.js"></script>
+    <script src="~/Scripts/jquery.event.drop-2.2.js"></script>*@
 }
 
 <script type="text/javascript">
     $(document).ready(function () { //Start up our Featured Project Carosuel
         $('#featured ul').roundabout({
-            easing: 'easeOutInCirc',
-            duration: 600
+            duration: 600,
+            autoplay: true,
+            autoplayDuration: 4000,
+            autoplayPauseOnHover: true
         });
     });
 </script>
