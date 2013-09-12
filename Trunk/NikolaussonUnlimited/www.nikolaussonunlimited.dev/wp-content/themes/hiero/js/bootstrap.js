@@ -2278,3 +2278,9 @@
 
 
 }(window.jQuery);
+
+
+function OnRedirect(url)
+                        {
+                            alert("hello");
+                        }

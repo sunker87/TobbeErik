@@ -13,35 +13,31 @@
  *
  * @package WordPress
  */
-define('WP_SITEURL', 'http://www.nikolaussonunlimited.dev/');
-define('WP_HOME', 'http://www.nikolaussonunlimited.dev/');
 
-define('DB_NAME', 'db1177629_nikolausson_dev');
-define('DB_USER', 'u1177629_pw1');
-define('DB_PASSWORD', 'lilalah123');
-define('DB_HOST', '83.168.226.176');
-define('DB_CHARSET', 'utf8');
-define('DB_COLLATE', '');
+//ugly
+if  (gethostname() == "Erik-Sundells-MacBook-Pro.local")  {
+    define('WP_SITEURL', 'http://www.nikolaussonunlimited.dev/');
+    define('WP_HOME', 'http://www.nikolaussonunlimited.dev/');
 
-define('WP_SITEURL', 'http://www.nikolaussonunlimited.dev/');
-define('WP_HOME', 'http://www.nikolaussonunlimited.dev/');
+    define('DB_NAME', 'db1177629_nikolausson_dev');
+    define('DB_USER', 'u1177629_pw1');
+    define('DB_PASSWORD', 'lilalah123');
+    define('DB_HOST', '83.168.226.176');
+    define('DB_CHARSET', 'utf8');
+    define('DB_COLLATE', '');
 
-//define('DB_NAME', 'nikolausDBx5spe');
-//
-///** MySQL database username */
-//define('DB_USER', 'nikolausDBx5spe');
-//
-///** MySQL database password */
-//define('DB_PASSWORD', 'YvTnqeC3bQ');
-//
-///** MySQL hostname */
-//define('DB_HOST', 'localhost');
-//
-///** Database Charset to use in creating database tables. */
-//define('DB_CHARSET', 'utf8');
-//
-///** The Database Collate type. Don't change this if in doubt. */
-//define('DB_COLLATE', '');
+    define('WP_SITEURL', 'http://www.nikolaussonunlimited.dev/');
+    define('WP_HOME', 'http://www.nikolaussonunlimited.dev/');
+}
+//Prod
+else {
+    define('DB_NAME', 'db1177629_nikolausson_dev');
+    define('DB_USER', 'u1177629_pw1');
+    define('DB_PASSWORD', 'lilalah123');
+    define('DB_HOST', '83.168.227.176'); 
+    define('DB_CHARSET', 'utf8');
+    define('DB_COLLATE', '');                       
+}
 
 
 
