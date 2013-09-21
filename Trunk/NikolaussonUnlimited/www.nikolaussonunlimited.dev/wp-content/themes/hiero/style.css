@@ -64,7 +64,7 @@ a {
 		 -o-transition: all 0.14s ease 0s; 
 	}
 a:visited {
-	color: #eb2121;
+	color: #006363;
 	}
 a:hover,
 a:focus,
@@ -79,7 +79,7 @@ blockquote p {
 dd {
 	margin-bottom: 1em;
 	}
-
+            
 /* Forms */
 select,
 textarea,
@@ -387,13 +387,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009999', end
 #main-navigation li li:hover ul,
 #main-navigation li li.sfHover ul {
 	top: 0;
-	border-left: 1px solid #fd4848;
+	border-left: 1px solid #33CCCC;
 	}
 #main-navigation li li {
-	border-bottom: 1px solid #fd4848;
+	border-bottom: 1px solid #33CCCC;
 	}
 #main-navigation li li a {
-	color: #ffabab;
+	color: white;
 	}
 #main-navigation li a:hover,
 #main-navigation li.sfHover > a,
@@ -416,7 +416,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009999', end
 	}
 #main-navigation li:hover li a:hover,
 #main-navigation li.sfHover li a:hover {
-	background: #eb2121;
+	background: #FF9640;
 	}
 
 /* Small Navigation */
