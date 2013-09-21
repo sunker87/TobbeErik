@@ -28,20 +28,18 @@
 		<div class="clearfix container">
 			<div class="site-branding">
 				
-                                <div class="site-title"><img style="width:150%;height:150%" src="/wp-content/themes/hiero/images/logo7.png"></img></div>
+                                <div class="site-title"><img style="width:100%;height:100%" src="/wp-content/themes/hiero/images/logo7.png"></img></div>
                                 				
 			<!-- .site-branding --></div>
-                        <div id="flags" style="max-width: 980px;display:block;margin-left: auto;margin-right: auto;margin-top: 0px;">
-                    <div id="flags" style="float: right;margin-top: 0px;">
-                        <a href="http://www.nikolaussonunlimited.dev/"><img style="width:30px;height:25px;" src="/wp-content/themes/hiero/Flags/Dirty Flag Folders Sweden.png"></img></a>
-                        <a href="http://www.nikolaussonunlimited.dev/pt"><img style="width:30px;height:25px;" src="/wp-content/themes/hiero/Flags/Dirty Flag Folders Brazil.png"></img></a>
-                        <a href="http://www.nikolaussonunlimited.dev/en"><img style="width:30px;height:25px;" src="/wp-content/themes/hiero/Flags/Dirty Flag Folders Uk.png"></img></a>
-                    </div>
-    </div>
-                    <!--<div class="widget" style="width: 20%;height:20%;margin-right: 80px;">
-                         <div class="site-title"><img style="" src="/wp-content/themes/hiero/images/test2.png"></img></div>
-                    </div>-->
-			<?php if ( ! dynamic_sidebar( 'sidebar-2' ) ) : ?>
+                      
+                    
+                        <div id="flags">
+                            <?php include 'inc/CustomLanguageSelector.php'; ?>
+                        </div>
+                    
+                      
+			<?php 
+                        if ( ! dynamic_sidebar( 'sidebar-2' ) ) : ?>
 			<?php endif; ?>
                             
 			<nav id="main-navigation" class="main-navigation" role="navigation">

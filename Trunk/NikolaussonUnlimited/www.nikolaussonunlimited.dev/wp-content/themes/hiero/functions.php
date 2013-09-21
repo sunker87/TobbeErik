@@ -57,6 +57,18 @@ add_action( 'after_setup_theme', 'athemes_setup' );
 /**
  * Register widgetized area and update sidebar with default widgets
  */
+
+if ( function_exists('register_sidebar') ){
+    register_sidebar(array(
+        'name' => 'my_mega_menu',
+        'before_widget' => '<div id="my-mega-menu-widget">',
+        'after_widget' => '</div>',
+        'before_title' => '',
+        'after_title' => '',
+));
+}
+
+
 function athemes_widgets_init() {
 	register_sidebar( array(
 		'name'          => __( 'Sidebar', 'athemes' ),
@@ -168,7 +180,8 @@ function athemes_scripts() {
 	wp_enqueue_script( 'superfish', get_template_directory_uri() . '/js/superfish.js', array( 'jquery' ) );
 	wp_enqueue_script( 'supersubs', get_template_directory_uri() . '/js/supersubs.js', array( 'jquery' ) );
 	wp_enqueue_script( 'athemes-settings', get_template_directory_uri() . '/js/settings.js', array( 'jquery' ) );
-
+        wp_enqueue_script( 'nikolausson', get_template_directory_uri() . '/js/nikolausson.js', array( 'jquery' ) );
+        
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

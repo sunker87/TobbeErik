@@ -1208,3 +1208,15 @@ body.search .page .entry-footer {
 	}
 @media screen and (max-width: 320px) {
 	}
+        
+ /* Tillagt
+----------------------------------------------- */
+ #flags{
+     float: right;
+     margin-top: 0px;
+ }
+ 
+.imageLink {
+     width:30px;
+     height:25px;
+ }
