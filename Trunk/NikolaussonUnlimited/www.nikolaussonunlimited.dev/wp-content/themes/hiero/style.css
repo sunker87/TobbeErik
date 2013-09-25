@@ -418,6 +418,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009999', end
 #main-navigation li.sfHover li a:hover {
 	background: #FF9640;
 	}
+        
+#featured_slider {
+/*max-width: 100% !important;*/
+}
+user agent stylesheet
 
 /* Small Navigation */
 .nav-open,
