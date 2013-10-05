@@ -11,6 +11,19 @@ Tags: black, white, red, two-columns, fixed-width, threaded-comments, full-width
 */
 
 
+/*
+Theme Name: Hiero
+Theme URI: http://athemes.com/theme/hiero
+Author: aThemes
+Author URI: http://athemes.com
+Description:  Hiero is an awesome magazine theme for your WordPress site feature bold colors and details to the content. Responsive layout, post thumbnails support, threaded comments and more.
+Version: 1.2
+License: GNU General Public License v3.0
+License URI: license.txt
+Tags: black, white, red, two-columns, fixed-width, threaded-comments, full-width-template, custom-menu
+*/
+
+
 /* Global
 ----------------------------------------------- */
 body {
@@ -64,7 +77,7 @@ a {
 		 -o-transition: all 0.14s ease 0s; 
 	}
 a:visited {
-	color: #006363;
+	color: #eb2121;
 	}
 a:hover,
 a:focus,
@@ -79,7 +92,7 @@ blockquote p {
 dd {
 	margin-bottom: 1em;
 	}
-            
+
 /* Forms */
 select,
 textarea,
@@ -387,13 +400,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009999', end
 #main-navigation li li:hover ul,
 #main-navigation li li.sfHover ul {
 	top: 0;
-	border-left: 1px solid #33CCCC;
+	border-left: 1px solid #fd4848;
 	}
 #main-navigation li li {
-	border-bottom: 1px solid #33CCCC;
+	border-bottom: 1px solid #fd4848;
 	}
 #main-navigation li li a {
-	color: white;
+	color: #ffabab;
 	}
 #main-navigation li a:hover,
 #main-navigation li.sfHover > a,
@@ -416,13 +429,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009999', end
 	}
 #main-navigation li:hover li a:hover,
 #main-navigation li.sfHover li a:hover {
-	background: #FF9640;
+	background: #eb2121;
 	}
-        
-#featured_slider {
-/*max-width: 100% !important;*/
-}
-user agent stylesheet
 
 /* Small Navigation */
 .nav-open,
@@ -1146,6 +1154,7 @@ body.search .page .entry-footer {
 	}
 .site-info {
 	float: left;
+        color: white;
 	}
 .site-credit {
 	float: right;
@@ -1212,8 +1221,7 @@ body.search .page .entry-footer {
 		}
 	}
 @media screen and (max-width: 320px) {
-	}
-        
+	}        
  /* Tillagt
 ----------------------------------------------- */
  #flags{

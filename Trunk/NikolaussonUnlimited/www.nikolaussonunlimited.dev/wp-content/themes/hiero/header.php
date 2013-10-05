@@ -43,8 +43,8 @@
 			<?php endif; ?>
                             
 			<nav id="main-navigation" class="main-navigation" role="navigation">
-<!--				<a href="#main-navigation" class="nav-open">Menu</a>
-				<a href="#" class="nav-close">Close</a>-->
+				<a href="#main-navigation" class="nav-open">Menu</a>
+				<a href="#" class="nav-close">Close</a>
 				<?php wp_nav_menu( array( 'container_class' => 'clearfix sf-menu', 'theme_location' => 'main' ) ); ?>
 			<!-- #main-navigation --></nav>
 		</div>
