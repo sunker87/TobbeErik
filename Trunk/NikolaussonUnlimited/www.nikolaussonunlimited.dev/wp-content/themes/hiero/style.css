@@ -1180,6 +1180,12 @@ body.search .page .entry-footer {
 	.site-extra .widget-area {
 		width: 50%;
 		}
+        site-header .widget {
+        float: center !important;
+	clear: right;
+	margin: 5px 0;
+	text-align: center;
+	}
 	}
 @media screen and (max-width: 758px) {
 	.site-header .widget-area {
@@ -1210,6 +1216,13 @@ body.search .page .entry-footer {
 	.site-extra .widget-area {
 		width: 100%;
 		}
+                
+        site-header .widget {
+        float: center !important;
+	clear: right;
+	margin: 5px 0;
+	text-align: center;
+	}
 	}
 @media screen and (max-width: 480px) {
 	.site-footer {
@@ -1219,8 +1232,21 @@ body.search .page .entry-footer {
 	.site-footer .site-credit {
 		float: none;
 		}
+        .site-header .widget {
+                    float: center !important;
+	clear: right;
+	margin: 5px 0;
+	text-align: center;
+	}
 	}
 @media screen and (max-width: 320px) {
+    /* Header Widgets */
+site-header .widget {
+                    float: center !important;
+	clear: right;
+	margin: 5px 0;
+	text-align: center;
+	}
 	}        
  /* Tillagt
 ----------------------------------------------- */

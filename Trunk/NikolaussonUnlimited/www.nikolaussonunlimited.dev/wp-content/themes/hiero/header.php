@@ -28,7 +28,7 @@
 		<div class="clearfix container">
 			<div class="site-branding">
 				
-                                <div class="site-title"><img style="width:100%;height:100%" src="/wp-content/themes/hiero/images/logo7.png"></img></div>
+                            <div class="site-title"><a href='<?php echo home_url(); ?>'><img style="width:100%;height:100%" src="/wp-content/themes/hiero/images/logo7.png"></a></img></div>
                                 				
 			<!-- .site-branding --></div>
                       
